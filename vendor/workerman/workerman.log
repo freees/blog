@@ -1,0 +1,971 @@
+2019-06-20 17:27:04 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:27:04 pid:1 Worker process terminated
+2019-06-20 17:28:47 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:28:47 pid:1 Worker process terminated
+2019-06-20 17:30:21 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:30:21 pid:1 Worker process terminated
+2019-06-20 17:32:54 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:32:54 pid:1 Worker process terminated
+2019-06-20 17:32:58 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:32:58 pid:1 Worker process terminated
+2019-06-20 17:33:38 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:33:38 pid:1 Worker process terminated
+2019-06-20 17:33:41 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:33:41 pid:1 Worker process terminated
+2019-06-20 17:33:59 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:33:59 pid:1 Worker process terminated
+2019-06-20 17:35:22 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:107
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:35:22 pid:1 Worker process terminated
+2019-06-20 17:35:45 pid:1 Worker process terminated
+2019-06-20 17:39:12 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:108
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-20 17:39:12 pid:1 Worker process terminated
+2019-06-21 09:12:02 pid:1 exception 'ReflectionException' with message 'Class session does not exist' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php:729
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php(729): ReflectionClass->__construct('session')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php(608): Illuminate\Container\Container->build('session')
+#2 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php(575): Illuminate\Container\Container->resolve('session')
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(106): Illuminate\Container\Container->make('session')
+#4 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(760): app('session')
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php(43): session('nick_name')
+#6 [internal function]: Events::onConnect('7f0000010b54000...')
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(398): call_user_func('Events::onConne...', '7f0000010b54000...')
+#8 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#10 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#12 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#13 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#15 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#16 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#17 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2019-06-21 09:12:02 pid:1 Worker process terminated
+2019-06-21 09:12:56 pid:1 exception 'ReflectionException' with message 'Class session does not exist' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php:729
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php(729): ReflectionClass->__construct('session')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php(608): Illuminate\Container\Container->build('session')
+#2 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Container\Container.php(575): Illuminate\Container\Container->resolve('session')
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(106): Illuminate\Container\Container->make('session')
+#4 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(760): app('session')
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php(43): session('nick_name')
+#6 [internal function]: Events::onConnect('7f0000010b54000...')
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(398): call_user_func('Events::onConne...', '7f0000010b54000...')
+#8 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#10 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #55)
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#12 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#13 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#14 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#15 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#16 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#17 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#18 {main}
+2019-06-21 09:12:56 pid:1 Worker process terminated
+2019-06-21 11:49:46 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:88
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"say","...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"say","...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-21 11:49:46 pid:1 Worker process terminated
+2019-06-29 10:09:50 pid:1 exception 'Exception' with message '$message_data['room_id'] not set. client_ip:127.0.0.1 $message:{"type":"login","data":"[object Object]"}' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:70
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"login"...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"login"...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 10:09:50 pid:1 Worker process terminated
+2019-06-29 12:55:43 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:55:43 pid:1 Worker process terminated
+2019-06-29 12:55:47 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:55:47 pid:1 Worker process terminated
+2019-06-29 12:55:54 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:55:54 pid:1 Worker process terminated
+2019-06-29 12:56:06 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:56:06 pid:1 Worker process terminated
+2019-06-29 12:56:11 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:56:11 pid:1 Worker process terminated
+2019-06-29 12:56:17 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:56:17 pid:1 Worker process terminated
+2019-06-29 12:56:32 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:56:32 pid:1 Worker process terminated
+2019-06-29 12:56:50 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 12:56:50 pid:1 Worker process terminated
+2019-06-29 13:02:43 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 13:02:43 pid:1 Worker process terminated
+2019-06-29 13:02:55 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 13:02:55 pid:1 Worker process terminated
+2019-06-29 13:03:10 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 13:03:10 pid:1 Worker process terminated
+2019-06-29 14:43:16 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 14:43:16 pid:1 Worker process terminated
+2019-06-29 15:28:15 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:28:15 pid:1 Worker process terminated
+2019-06-29 15:28:20 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:28:20 pid:1 Worker process terminated
+2019-06-29 15:28:49 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:28:49 pid:1 Worker process terminated
+2019-06-29 15:29:03 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:29:03 pid:1 Worker process terminated
+2019-06-29 15:30:48 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #58)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:30:48 pid:1 Worker process terminated
+2019-06-29 15:30:54 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:30:54 pid:1 Worker process terminated
+2019-06-29 15:33:21 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:33:21 pid:1 Worker process terminated
+2019-06-29 15:35:11 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:35:11 pid:1 Worker process terminated
+2019-06-29 15:35:38 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:35:38 pid:1 Worker process terminated
+2019-06-29 15:36:39 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:36:39 pid:1 Worker process terminated
+2019-06-29 15:42:11 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:42:11 pid:1 Worker process terminated
+2019-06-29 15:43:37 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:43:37 pid:1 Worker process terminated
+2019-06-29 15:47:45 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:47:45 pid:1 Worker process terminated
+2019-06-29 15:52:08 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:52:08 pid:1 Worker process terminated
+2019-06-29 15:52:12 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:52:12 pid:1 Worker process terminated
+2019-06-29 15:52:47 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:52:47 pid:1 Worker process terminated
+2019-06-29 15:52:53 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:52:53 pid:1 Worker process terminated
+2019-06-29 15:53:06 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 15:53:06 pid:1 Worker process terminated
+2019-06-29 16:25:36 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:129
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '"{\\"toUserInfo\\...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '"{\\"toUserInfo\\...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:25:36 pid:1 Worker process terminated
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:37 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:38 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2019-06-29 16:25:41 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:129
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '"{\\"toUserInfo\\...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '"{\\"toUserInfo\\...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:25:41 pid:1 Worker process terminated
+2019-06-29 16:25:51 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:129
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '"{\\"toUserInfo\\...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '"{\\"toUserInfo\\...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:25:51 pid:1 Worker process terminated
+2019-06-29 16:25:55 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:129
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '"{\\"toUserInfo\\...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '"{\\"toUserInfo\\...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:25:55 pid:1 Worker process terminated
+2019-06-29 16:26:06 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:129
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '"{\\"toUserInfo\\...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '"{\\"toUserInfo\\...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:26:06 pid:1 Worker process terminated
+2019-06-29 16:27:52 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:129
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '"{\\"toUserInfo\\...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '"{\\"toUserInfo\\...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:27:52 pid:1 Worker process terminated
+2019-06-29 16:28:28 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:129
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '"{\\"toUserInfo\\...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '"{\\"toUserInfo\\...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:28:28 pid:1 Worker process terminated
+2019-06-29 16:30:48 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:30:48 pid:1 Worker process terminated
+2019-06-29 16:31:07 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:31:07 pid:1 Worker process terminated
+2019-06-29 16:31:10 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:31:10 pid:1 Worker process terminated
+2019-06-29 16:31:18 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:31:18 pid:1 Worker process terminated
+2019-06-29 16:31:29 pid:1 exception 'Exception' with message 'You can't send(array) to client, you need to convert it to a string. ' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(605): Workerman\Connection\TcpConnection->send(Array, false)
+#2 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #54)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\Gateway.php(276): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\Gateway->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
+#12 {main}
+2019-06-29 16:31:29 pid:1 Worker process terminated
