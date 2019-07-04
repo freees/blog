@@ -6,3 +6,7 @@ services.json
 events.scanned.php
 routes.scanned.php
 down
+/cache
+/session
+/testing
+/views
