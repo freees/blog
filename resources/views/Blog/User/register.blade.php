@@ -73,20 +73,6 @@
         layer.msg('两次密码不同o(╥﹏╥)o');
         return false;
       }
-      //加载动画
-      {{--var loading = layer.load(0, {shade: false, time:1000});--}}
-      {{--$.get("{{url('register')}}",data.field,function(res){--}}
-      {{--  if(res.code == '1'){--}}
-      {{--    layer.msg(res.msg, {icon: 1},function () {--}}
-      {{--      window.location.href="{{url('login')}}";--}}
-      {{--    });--}}
-      {{--  }else if(res.code == '2'){--}}
-      {{--      layer.msg(res.msg, function () {--}}
-      {{--         // window.location.reload();--}}
-      {{--      });--}}
-      {{--  }--}}
-      {{--},'json');--}}
-      {{--return false;--}}
       $.ajax({
         type:'post',
         url:'{{url('register')}}',

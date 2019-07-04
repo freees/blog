@@ -29,9 +29,9 @@
             我的好友
         </a>
         <dl class="layui-nav-child">
-            <dd><a href="{{route('message',['to_user'=>'all'])}}">群聊</a></dd>
+            <dd><a href="{{route('message',['to_user_no'=>'all'])}}"><img src="{{asset('upload/face_img/group_img.jpeg')}}" style="height: 30px;width: 30px;margin-right: 10px">群聊</a></dd>
             @foreach($friends as $v)
-            <dd><a href="{{route('message',['to_user'=>$v->friend_no])}}">{{$v->nick_name}}</a></dd>
+            <dd><a href="{{route('message',['to_user_no'=>$v->friend_no])}}"><img src="{{$v->face_img}}" style="height: 30px;width: 30px;margin-right: 10px">{{$v->nick_name}}</a></dd>
             @endforeach
         </dl>
     </li>

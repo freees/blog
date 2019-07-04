@@ -44,7 +44,6 @@
                   <img src="<?php echo e(captcha_src('math')); ?>" onclick="this.src='<?php echo e(captcha_src('math')); ?>'+Math.random()">
                 </div>
               </div>
-              
               <div class="layui-form-item">
                 <button class="layui-btn" lay-filter="register" lay-submit>立即注册</button>
               </div>
@@ -69,20 +68,6 @@
         layer.msg('两次密码不同o(╥﹏╥)o');
         return false;
       }
-      //加载动画
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       $.ajax({
         type:'post',
         url:'<?php echo e(url('register')); ?>',

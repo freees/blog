@@ -31,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('article_num', $article_num)->with('hot_list',$hot_list)->with('ad',$ad)->with('link',$link)->with('aisle',$aisle);
         });
         View()->composer('Blog.Common.user_nav',function ($view){
-            $friends = DB::table('friend as f')->where('f.user_no',session('user_no'))->join('user as u','f.friend_id','=','u.user_id')->select('u.nick_name','f.*')->get();
+            $friends = DB::table('friend as f')->where('f.user_no',session('user_no'))->join('user as u','f.friend_id','=','u.user_id')->select('u.nick_name','u.face_img','f.*')->get();
             $view->with('friends', $friends);
         });
     }

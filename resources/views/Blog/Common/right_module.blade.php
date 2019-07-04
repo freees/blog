@@ -44,6 +44,11 @@
       @endforeach
   </dl>
 
+    <div class="fly-panel" style="padding: 20px 0; text-align: center;">
+        <img src="{{asset('images/blog/wx_qrcode.jpg')}}" style="max-width: 100%;" alt="layui">
+        <p style="position: relative; color: #666;">扫码关注Free社区订阅号</p>
+    </div>
+
   <div class="fly-panel fly-link">
     <h3 class="fly-panel-title">友情链接</h3>
     <dl class="fly-panel-main">
@@ -52,5 +57,7 @@
         @endforeach
     </dl>
   </div>
+
+
 
 </div>

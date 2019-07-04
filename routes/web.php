@@ -30,6 +30,8 @@ Route::get('/index','Blog\\IndexController@index')->name('index');
 Route::any('/add_article','Blog\\ArticleController@addArticle')->middleware('user')->name('add_article')->middleware('email');
 //上传图片
 Route::post('/upload_image','Blog\\ArticleController@uploadImage');
+//聊天图片
+Route::post('/upload_chat_image','Blog\\UserController@uploadImage');
 //文章列表
 Route::any('/article_list','Blog\\ArticleController@articleList')->name ('article_list') ;
 //文章详情

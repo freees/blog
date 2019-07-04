@@ -34,7 +34,14 @@ class UserController extends Controller
             unset($data['password2']);
             unset($data['captcha']);
             //默认头像
-            $data['face_img'] = "https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg";
+            $k = mt_rand(1,4);
+            $face_img = [
+                asset('upload/face_img/default_face_img1.png'),
+                asset('upload/face_img/default_face_img2.png'),
+                asset('upload/face_img/default_face_img3.jpeg'),
+                asset('upload/face_img/default_face_img4.png'),
+                ];
+            $data['face_img'] = $face_img[$k];
             $data['password'] = md5($data['password']);
             $data['create_time'] = time();
             $data['user_no'] = makeNo(uniqid('U'),5);
@@ -127,7 +134,7 @@ class UserController extends Controller
         Mail::send('Blog.Common.email',['user_no' => session('user_no'),'nick_name' => session('nick_name')],function ($message) {
             $user = getUserInfo(session('user_id'));
             $message->to($user['email']);
-            $message->subject('技术社区激活邮件');
+            $message->subject('Free社区激活邮件');
         });
         echo true; exit;
     }
@@ -219,15 +226,15 @@ class UserController extends Controller
         return view('Blog.User.chat');
     }
     public function message(Request $request){
-        $to_user_no = $request->input('to_user');
+        $to_user_no = $request->input('to_user_no');
         $to_nick_name = '群聊';
         if($to_user_no != 'all'){
-            $user = $this->userModel->where('user_no', $to_user_no)->first();
-            $to_user_no = $user['user_no'];
-            $to_nick_name = $user['nick_name'];
+            $to_user = $this->userModel->where('user_no', $to_user_no)->first();
+            $to_user_no = $to_user['user_no'];
+            $to_nick_name = $to_user['nick_name'];
         }
-
-        return view('Blog.User.message')->with('to_user_no',$to_user_no)->with('to_nick_name',$to_nick_name);
+        $user = getUserInfo(session('user_id'));
+        return view('Blog.User.message')->with('to_user_no',$to_user_no)->with('to_nick_name',$to_nick_name)->with('user',$user);
     }
     public function addFriend(Request $request){
         if(request()->ajax()){
@@ -282,6 +289,12 @@ class UserController extends Controller
         return json_encode($info);
     }
 
-    //
+    //聊天图片
+    public function uploadImage(Request $request){
+        $path = $request->file('file')->store('chat');
+        $path = asset('upload/'.$path);
+        $data = ['code'=>0,'msg'=>'上传成功','data'=>['src'=>"$path"]];
+        return  json_encode($data);
+    }
 
 }

@@ -102,7 +102,7 @@
               </div>
             </div>
             <div class="detail-body jieda-body photos">
-              <p>{{$v->content}}</p>
+              <p>{!! $v->content !!}</p>
             </div>
             <div class="jieda-reply">
               @if(in_array(session('user_id'),explode(',',$v->like_user_id)) && session('user_id'))

@@ -35,239 +35,114 @@ class Events
     public static function onConnect($client_id)
     {
         // 向当前client_id发送数据
-        $msg['client_id'] = $client_id;
-        $msg['type'] = "login";
-        $msg['time'] = date('Y-m-d H:i:s');
        // Gateway::sendToClient($client_id, json_encode($msg));
         // 向所有人发送
       // Gateway::sendToAll( json_encode($msg));
     }
     
-   /**
-    * 当客户端发来消息时触发
-    * @param int $client_id 连接id
-    * @param mixed $message 具体消息
-    */
-       public static function onMessage($client_id, $message)
-   {
-        // 向所有人发送
-       // Gateway::sendToAll("$client_id said $message\r\n");
-//       $msg['type'] = "say";
-//       $msg['time'] = date('Y-m-d H:i:s');
-//       $data = json_decode($message,true);
-//       $msg['content'] = $data['content'];
-//        Gateway::sendToAll(json_encode($msg));
-       // 客户端传递的是json数据
 
-       $message_data = json_decode($message, true);
 
-       if(!$message_data)
-       {
-           return ;
-       }
-          Gateway::sendToAll($message_data);return;
-       $user_no = $message_data['userInfo']['user_no'];
 
-       Gateway::bindUid( $client_id,$user_no);
-
-       // 把房间号昵称放到session中
-
-       $face_img = $message_data['userInfo']['face_img'];
-       $nick_name = htmlspecialchars($message_data['userInfo']['nick_name']);
-       // $_SESSION['room_id'] = $room_id;
-       $_SESSION['nick_name'] = $nick_name;
-       $_SESSION['face_img'] = $face_img;
-       $_SESSION['user_no'] = $user_no;
-       if(!$_SESSION['user_no']){
-           if($message_data['toUserInfo'] =='all'){
-               if(!isset($message_data['room_id'])) {
-                   throw new \Exception("\$message_data['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']} \$message:$message");
-               }
-               $room_id = $message_data['room_id'];
-                    // 转播给当前房间的所有客户端，xx进入聊天室 message {type:login, client_id:xx, name:xx}
-                $new_message = [
-                    'type'=>$message_data['type'],
-                    'user_type'=>$message_data['user_type'],
-                    'client_id'=>$client_id,
-                    'nick_name'=>htmlspecialchars($nick_name),
-                    'time'=>date('Y-m-d H:i:s'),
-                    'prompt'=>"$nick_name 加入了群聊"
-                ];
-                Gateway::joinGroup($client_id, $room_id);
-                Gateway::sendToGroup($room_id, json_encode($new_message));
-
-                // 获取房间内所有用户列表
-                $clients_list = Gateway::getClientSessionsByGroup($room_id);
-                $clients_list_new = [];
-                foreach($clients_list as $tmp_client_id=>$item)
-                {
-                    $item['client_id'] = $tmp_client_id;
-                    $clients_list_new[] =$item;
-                    //$clients_list[$tmp_client_id] = $item;
+    public static function onMessage($client_id, $message)
+    {
+        // 客户端传递的是json数据
+        $message_data = json_decode($message, true);
+        if(!$message_data)
+        {
+            return ;
+        }
+        //绑定当前用户id
+        Gateway::bindUid( $client_id,$message_data['user_no']);
+        $_SESSION['nick_name'] = $message_data['nick_name'];
+        $_SESSION['to_user_no'] = $message_data['to_user_no'];
+        // 根据类型执行不同的业务
+        switch($message_data['type'])
+        {
+            case 'login':
+                if($message_data['to_user_no'] == 'all'){
+                    //获取分组当前在线成连接数
+                    $onlie_count = Gateway::getClientIdCountByGroup(1);
+                    $new_message = [
+                        'type'=>$message_data['type'],
+                        'nick_name'=>htmlspecialchars($message_data['nick_name']),
+                        'time'=>date('Y-m-d H:i:s'),
+                        'prompt'=>$message_data['nick_name']."加入了群聊",
+                        'onlie_count'=>$onlie_count+1,
+                    ];
+                    $room_id = 1;
+                    Gateway::joinGroup($client_id, $room_id);
+                    //群发消息，并排除当前ID
+                    Gateway::sendToGroup($room_id, json_encode($new_message));
+                    return;
+                }else{
+                    $to_user_no = $message_data['to_user_no'];
+                    $is_online = Gateway::isUidOnline($to_user_no);
+                    $prompt = $is_online== '1' ? '对方在线状态，可发送实时消息' : '对方离线状态，暂不支持离线消息';
+                    $new_message = [
+                        'type'=>$message_data['type'],
+                      //  'nick_name'=>htmlspecialchars($nick_name),
+                        'time'=>date('Y-m-d H:i:s'),
+                        'prompt'=>$prompt
+                    ];
+                    Gateway::sendToClient($client_id, json_encode($new_message));
+                    return;
                 }
-                // 给当前用户发送用户列表
-                $data['client_list'] = $clients_list_new;
-                Gateway::sendToGroup($room_id ,json_encode($data));
-           }else{
-               $to_user_no = $message_data['toUserInfo']['user_no'];
-               $is_online = Gateway::isUidOnline($to_user_no);
-               $prompt = $is_online== '1' ? '对方在线' : '对方不在线';
-               $new_message = [
-                   'type'=>$message_data['type'],
-                   'user_type'=>$message_data['user_type'],
-                   'client_id'=>$client_id,
-                   'nick_name'=>htmlspecialchars($nick_name),
-                   'time'=>date('Y-m-d H:i:s'),
-                   'prompt'=>$prompt
-               ];
-               Gateway::sendToClient($client_id, json_encode($new_message));
-           }
-       }else{
-           // 非法请求
-           if(!isset($_SESSION['room_id']))
-           {
-               throw new \Exception("\$_SESSION['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']}");
-           }
-           $room_id = $_SESSION['room_id'];
-           $nick_name = $_SESSION['nick_name'];
-           $face_img = $_SESSION['face_img'];
-           // 私聊
-           if($message_data['to_client_id'] != 'all')
-           {
-               $new_message = array(
-                   'type'=>'say',
-                   'from_client_id'=>$client_id,
-                   'from_nick_name' =>$nick_name,
-                   'from_face_img' =>$face_img,
-                   'to_client_id'=>$message_data['to_client_id'],
-                   'content'=>"<b>对你说: </b>".nl2br(htmlspecialchars($message_data['content'])),
-                   'time'=>date('Y-m-d H:i:s'),
-               );
-               Gateway::sendToClient($message_data['to_client_id'], json_encode($new_message));
-               $new_message['content'] = "<b>你对".htmlspecialchars($message_data['to_client_name'])."说: </b>".nl2br(htmlspecialchars($message_data['content']));
-               return Gateway::sendToCurrentClient(json_encode($new_message));
-           }else{
-               $new_message = array(
-                   'type'=>'say',
-                   'from_client_id'=>$client_id,
-                   'from_nick_name' =>$nick_name,
-                   'from_face_img' =>$face_img,
-                   'to_client_id'=>'all',
-                   'content'=>nl2br(htmlspecialchars($message_data['content'])),
-                   'time'=>date('Y-m-d H:i:s'),
-               );
-               return Gateway::sendToGroup($room_id ,json_encode($new_message));
-           }
-       }
-   }
-
-
-//    public static function onMessage($client_id, $message)
-//    {
-//        // debug
-//        echo "client:{$_SERVER['REMOTE_ADDR']}:{$_SERVER['REMOTE_PORT']} gateway:{$_SERVER['GATEWAY_ADDR']}:{$_SERVER['GATEWAY_PORT']}  client_id:$client_id session:".json_encode($_SESSION)." onMessage:".$message."\n";
-//
-//        // 客户端传递的是json数据
-//        $message_data = json_decode($message, true);
-//        if(!$message_data)
-//        {
-//            return ;
-//        }
-//
-//        // 根据类型执行不同的业务
-//        switch($message_data['type'])
-//        {
-//            // 客户端回应服务端的心跳
-//            case 'pong':
-//                return;
-//            // 客户端登录 message格式: {type:login, name:xx, room_id:1} ，添加到客户端，广播给所有客户端xx进入聊天室
-//            case 'login':
-//                // 判断是否有房间号
-//                if(!isset($message_data['room_id']))
-//                {
-//                    throw new \Exception("\$message_data['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']} \$message:$message");
-//                }
-//
-//                // 把房间号昵称放到session中
-//                $room_id = $message_data['room_id'];
-//                $client_name = htmlspecialchars($message_data['client_name']);
-//                $_SESSION['room_id'] = $room_id;
-//                $_SESSION['client_name'] = $client_name;
-//
-//                // 获取房间内所有用户列表
-//                $clients_list = Gateway::getClientSessionsByGroup($room_id);
-//                foreach($clients_list as $tmp_client_id=>$item)
-//                {
-//                    $clients_list[$tmp_client_id] = $item['client_name'];
-//                }
-//                $clients_list[$client_id] = $client_name;
-//
-//                // 转播给当前房间的所有客户端，xx进入聊天室 message {type:login, client_id:xx, name:xx}
-//                $new_message = array('type'=>$message_data['type'], 'client_id'=>$client_id, 'client_name'=>htmlspecialchars($client_name), 'time'=>date('Y-m-d H:i:s'));
-//                Gateway::sendToGroup($room_id, json_encode($new_message));
-//                Gateway::joinGroup($client_id, $room_id);
-//
-//                // 给当前用户发送用户列表
-//                $new_message['client_list'] = $clients_list;
-//                Gateway::sendToCurrentClient(json_encode($new_message));
-//                return;
-//
-//            // 客户端发言 message: {type:say, to_client_id:xx, content:xx}
-//            case 'say':
-//                // 非法请求
-//                if(!isset($_SESSION['room_id']))
-//                {
-//                    throw new \Exception("\$_SESSION['room_id'] not set. client_ip:{$_SERVER['REMOTE_ADDR']}");
-//                }
-//                $room_id = $_SESSION['room_id'];
-//                $client_name = $_SESSION['client_name'];
-//
-//                // 私聊
-//                if($message_data['to_client_id'] != 'all')
-//                {
-//                    $new_message = array(
-//                        'type'=>'say',
-//                        'from_client_id'=>$client_id,
-//                        'from_client_name' =>$client_name,
-//                        'to_client_id'=>$message_data['to_client_id'],
-//                        'content'=>"<b>对你说: </b>".nl2br(htmlspecialchars($message_data['content'])),
-//                        'time'=>date('Y-m-d H:i:s'),
-//                    );
-//                    Gateway::sendToClient($message_data['to_client_id'], json_encode($new_message));
-//                    $new_message['content'] = "<b>你对".htmlspecialchars($message_data['to_client_name'])."说: </b>".nl2br(htmlspecialchars($message_data['content']));
-//                    return Gateway::sendToCurrentClient(json_encode($new_message));
-//                }
-//
-//                $new_message = array(
-//                    'type'=>'say',
-//                    'from_client_id'=>$client_id,
-//                    'from_client_name' =>$client_name,
-//                    'to_client_id'=>'all',
-//                    'content'=>nl2br(htmlspecialchars($message_data['content'])),
-//                    'time'=>date('Y-m-d H:i:s'),
-//                );
-//                return Gateway::sendToGroup($room_id ,json_encode($new_message));
-//        }
-//    }
+            case 'say':
+                if($message_data['to_user_no'] == 'all'){
+                    $new_message = [
+                        'type'=>$message_data['type'],
+                        'face_img'=>$message_data['face_img'],
+                        'nick_name'=>htmlspecialchars($message_data['nick_name']),
+                        'time'=>date('Y-m-d H:i:s'),
+                        'chat_content'=>$message_data['chat_content']
+                    ];
+                    $room_id = 1;
+                    //群发消息，并排除当前ID
+                    Gateway::sendToGroup($room_id, json_encode($new_message),[$client_id]);
+                    return;
+                }else{
+                    $to_user_no = $message_data['to_user_no'];
+                    $new_message = [
+                        'type'=>$message_data['type'],
+                        'face_img'=>$message_data['face_img'],
+                        'nick_name'=>htmlspecialchars($message_data['nick_name']),
+                        'time'=>date('Y-m-d H:i:s'),
+                        'chat_content'=>$message_data['chat_content']
+                    ];
+                    Gateway::sendToUid($to_user_no,json_encode($new_message));
+                    return;
+                }
+        }
+    }
 
    
    /**
-    * 当用户断开连接时触发
+    * 断开连接时触发
     * @param int $client_id 连接id
     */
    public static function onClose($client_id)
    {
-       // 获取房间内所有用户列表
-       $clients_list = Gateway::getClientSessionsByGroup($_SESSION['room_id']);
-       $clients_list_new = [];
-       foreach($clients_list as $tmp_client_id=>$item)
-       {
-           $item['client_id'] = $tmp_client_id;
-           $clients_list_new[] =$item;
-           //$clients_list[$tmp_client_id] = $item;
-       }
-       // 给当前用户发送用户列表
-       $data['client_list'] = $clients_list_new;
-       Gateway::sendToGroup($_SESSION['room_id'] ,json_encode($data));
+//       if($_SESSION['to_user_no'] =='all'){
+//           $new_message = [
+//               'type'=>'logout',
+//               'nick_name'=>htmlspecialchars($_SESSION['nick_name']),
+//               'time'=>date('Y-m-d H:i:s'),
+//               'prompt'=>$_SESSION['nick_name']."离开了群聊"
+//           ];
+//           //群发消息，并排除当前ID
+//           Gateway::sendToGroup(1, json_encode($new_message),[$client_id]);
+//           return;
+//       }else{
+//           $new_message = [
+//               'type'=>'logout',
+//               'nick_name'=>htmlspecialchars($_SESSION['nick_name']),
+//               'time'=>date('Y-m-d H:i:s'),
+//               'prompt'=>$_SESSION['nick_name']."下线了"
+//           ];
+//           //群发消息，并排除当前ID
+//           Gateway::sendToUid($_SESSION['to_user_no'], json_encode($new_message),[$client_id]);
+//           return;
+//       }
+
    }
 }

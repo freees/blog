@@ -29,9 +29,9 @@
             我的好友
         </a>
         <dl class="layui-nav-child">
-            <dd><a href="<?php echo e(route('message',['to_user'=>'all'])); ?>">群聊</a></dd>
+            <dd><a href="<?php echo e(route('message',['to_user_no'=>'all'])); ?>"><img src="<?php echo e(asset('upload/face_img/group_img.jpeg')); ?>" style="height: 30px;width: 30px;margin-right: 10px">群聊</a></dd>
             <?php $__currentLoopData = $friends; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $v): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <dd><a href="<?php echo e(route('message',['to_user'=>$v->friend_no])); ?>"><?php echo e($v->nick_name); ?></a></dd>
+            <dd><a href="<?php echo e(route('message',['to_user_no'=>$v->friend_no])); ?>"><img src="<?php echo e($v->face_img); ?>" style="height: 30px;width: 30px;margin-right: 10px"><?php echo e($v->nick_name); ?></a></dd>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </dl>
     </li>

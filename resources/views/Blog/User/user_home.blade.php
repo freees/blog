@@ -20,8 +20,10 @@
   <div class="fly-sns" data-user="">
     @if(!$friend)
     <a href="javascript:;" class="layui-btn layui-btn-primary fly-imActive" data-type="addFriend" id="add_friend">加为好友</a>
+    <a href="javascript:;" class="layui-btn layui-btn-normal fly-imActive" data-type="chat" id="no_chat">发起会话</a>
+    @else
+    <a href="{{route('message',['to_user_no'=>$userInfo->user_no])}}" class="layui-btn layui-btn-normal fly-imActive" data-type="chat">发起会话</a>
     @endif
-    <a href="javascript:;" class="layui-btn layui-btn-normal fly-imActive" data-type="chat">发起会话</a>
   </div>
   @endif
 </div>
@@ -61,6 +63,11 @@
   <script>
     layui.use(['layer'], function(){
       var layer = layui.layer;
+      $(document).on('click','#no_chat',function(){
+        layer.msg('他还不是你的好友o(╥﹏╥)o',function () {
+
+        });
+      });
       $(document).on('click','#add_friend',function(){
         $.post('{{url('add_friend')}}',{'friend_id':{{$userInfo->user_id}},'friend_no':'{{$userInfo->user_no}}'},function (res) {
           var res = JSON.parse(res);

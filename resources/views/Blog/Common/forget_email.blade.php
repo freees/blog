@@ -2,7 +2,7 @@
         <table border="0" cellpadding="0" cellspacing="0" style="width: 600px; border: 1px solid #ddd; border-radius: 3px; color: #555; font-family: 'Helvetica Neue Regular',Helvetica,Arial,Tahoma,'Microsoft YaHei','San Francisco','微软雅黑','Hiragino Sans GB',STHeitiSC-Light; font-size: 12px; height: auto; margin: auto; overflow: hidden; text-align: left; word-break: break-all; word-wrap: break-word;">
             <tbody style="margin: 0; padding: 0;"> <tr style="background-color: #393D49; height: 60px; margin: 0; padding: 0;">
                 <td style="margin: 0; padding: 0;"> <div style="color: #5EB576; margin: 0; margin-left: 30px; padding: 0;">
-                        <a style="font-size: 14px; margin: 0; padding: 0; color: #5EB576; text-decoration: none;" href="#" target="_blank" rel="noopener">技术社区</a>
+                        <a style="font-size: 14px; margin: 0; padding: 0; color: #5EB576; text-decoration: none;" href="#" target="_blank" rel="noopener">Free社区</a>
                     </div>
                 </td>
             </tr>

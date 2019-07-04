@@ -969,3 +969,19 @@ Stack trace:
 #11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_gateway.php(63): Workerman\Worker::runAll()
 #12 {main}
 2019-06-29 16:31:29 pid:1 Worker process terminated
+2019-07-03 16:39:34 pid:1 exception 'Exception' with message '$_SESSION['room_id'] not set. client_ip:127.0.0.1' in E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\Events.php:121
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"login"...')
+#1 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"login"...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#5 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#8 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1351): GatewayWorker\BusinessWorker->run()
+#9 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#10 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#11 E:\httpd-2.4.39\Apache24\web\www.laravel.cn\app\ChatServer\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2019-07-03 16:39:34 pid:1 Worker process terminated

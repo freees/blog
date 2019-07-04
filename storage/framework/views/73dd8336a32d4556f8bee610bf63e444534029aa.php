@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
-  <title>社区</title>
+  <title>Free社区</title>
   <link rel="icon" href="<?php echo e(asset('favicon.ico')); ?>" type="image/x-icon" />
   <link rel="shortcut icon" href="<?php echo e(asset('favicon.ico')); ?>" type="image/x-icon" />
   <link rel="stylesheet" href="<?php echo e(asset('layui/css/layui.css')); ?>">

@@ -104,7 +104,7 @@
               </div>
             </div>
             <div class="detail-body jieda-body photos">
-              <p><?php echo e($v->content); ?></p>
+              <p><?php echo $v->content; ?></p>
             </div>
             <div class="jieda-reply">
               <?php if(in_array(session('user_id'),explode(',',$v->like_user_id)) && session('user_id')): ?>
