@@ -222,9 +222,6 @@ class UserController extends Controller
         return view('Blog.User.user_home')->with('userInfo',$userInfo)->with('article_list',$article_list)->with('friend',$friend);
     }
 
-    public function chat(){
-        return view('Blog.User.chat');
-    }
     public function message(Request $request){
         $to_user_no = $request->input('to_user_no');
         $to_nick_name = '群聊';

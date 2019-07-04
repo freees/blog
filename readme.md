@@ -10,6 +10,7 @@
 - 启动websocket，windows环境双击start_for_win.bat,linux环境 命令 php start.php start
 - 安装注意：将.env 数据库地址及Email改为你自己的数据
 - 遇到安装问题可联系 468027411@qq.com
+- 没写管理后台
 - 遇到BUG或漏洞，欢迎赐教指正
 - 如果可以点个Star,持续更新
 

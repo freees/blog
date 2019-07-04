@@ -43,7 +43,6 @@ Route::any('/collect','Blog\\ArticleController@collect')->middleware('user')->mi
 //点赞
 Route::any('/zan','Blog\\ArticleController@zan')->middleware('user')->middleware('email')->name('zan');
 //用户中心
-Route::get('/chat','Blog\\UserController@chat')->middleware('user');
 Route::get('/send_email','Blog\\UserController@sendEmail')->middleware('user');
 Route::get('/my_article','Blog\\UserController@myArticle')->middleware('user');
 Route::get('/user_home','Blog\\UserController@userHome')->name('user_home')->middleware('user');
