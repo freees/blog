@@ -24,7 +24,7 @@
             "App\\": "app/"
         },
         "files":[
-            "app/Http/Controllers/Blog/common.php"
+            "app/Http/Controllers/Blog/Common.php"
         ]
     },
     "autoload-dev": {

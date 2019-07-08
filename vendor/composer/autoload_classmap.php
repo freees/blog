@@ -17,6 +17,7 @@ return array(
     'App\\Http\\Controllers\\Blog\\UserController' => $baseDir . '/app/Http/Controllers/Blog/UserController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
+    'App\\Http\\Middleware\\CheckEmail' => $baseDir . '/app/Http/Middleware/CheckEmail.php',
     'App\\Http\\Middleware\\CheckUser' => $baseDir . '/app/Http/Middleware/CheckUser.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',

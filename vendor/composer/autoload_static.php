@@ -21,7 +21,7 @@ class ComposerStaticInit1faa74847afd51605e576c7da538d252
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '5e8fe2a5ffaded85af682684fe3bbf5a' => __DIR__ . '/..' . '/mews/captcha/src/helpers.php',
-        '9f81265fa83a83e14f951ac6951a613b' => __DIR__ . '/../..' . '/app/Http/Controllers/Blog/common.php',
+        '4cccc3665621d3d7dbddd137596ca73a' => __DIR__ . '/../..' . '/app/Http/Controllers/Blog/Common.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -334,6 +334,7 @@ class ComposerStaticInit1faa74847afd51605e576c7da538d252
         'App\\Http\\Controllers\\Blog\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Blog/UserController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Middleware\\CheckEmail' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckEmail.php',
         'App\\Http\\Middleware\\CheckUser' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckUser.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',

@@ -91,6 +91,7 @@
   // 连接服务端
   function connect() {
     // 创建websocket
+    //49.234.95.109
     ws = new WebSocket("ws://127.0.0.1:8282");
     ws.onopen = onopen;
     ws.onmessage = onmessage;
@@ -108,15 +109,6 @@
     ws.send(info);
   }
 
-  // 提交对话
-  function onSubmit() {
-    var input = document.getElementById("textarea");
-    var to_client_id = $("#client_list option:selected").attr("value");
-    var to_client_name = $("#client_list option:selected").text();
-    ws.send('{"type":"say","to_client_id":"'+to_client_id+'","to_client_name":"'+to_client_name+'","content":"'+input.value.replace(/"/g, '\\"').replace(/\n/g,'\\n').replace(/\r/g, '\\r')+'"}');
-    input.value = "";
-    input.focus();
-  }
 
   // 服务端发来消息时
   function onmessage(e)
@@ -141,9 +133,6 @@
         // 用户退出 更新用户列表
       case 'logout':
         login(data.prompt);
-    }
-    if(data['client_list']){
-      client_list = data['client_list'];
     }
   }
 

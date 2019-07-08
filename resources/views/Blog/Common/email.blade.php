@@ -21,7 +21,7 @@
                         <p style="line-height: 20px; margin: 0; margin-bottom: 10px; padding: 0;">
                             Hi，<em style="font-weight: 700;">{{$nick_name}}</em>，请完成以下操作： </p>
                         <div style="">
-                            <a href="http://www.laravel.cn:81/check_email?user_no={{$user_no}}" style="background-color: #009E94; color: #fff; display: inline-block; height: 32px; line-height: 32px; margin: 0 15px 0 0; padding: 0 15px; text-decoration: none;" target="_blank" rel="noopener">立即激活邮箱</a>
+                            <a href="{{$_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST']}}/check_email?user_no={{$user_no}}" style="background-color: #009E94; color: #fff; display: inline-block; height: 32px; line-height: 32px; margin: 0 15px 0 0; padding: 0 15px; text-decoration: none;" target="_blank" rel="noopener">立即激活邮箱</a>
                         </div>
                         <p style="line-height: 20px; margin-top: 20px; padding: 10px; background-color: #f2f2f2; font-size: 12px;"> 如果该邮件不是由你本人操作，请勿进行激活！否则你的邮箱将会被他人绑定。 </p>
                     </td> </tr>

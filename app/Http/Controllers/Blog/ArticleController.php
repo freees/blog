@@ -43,6 +43,7 @@ class ArticleController extends Controller
     }
 
     public function articleList(Request $request){
+        $_SERVER;
         $nav_id = $request->input('nav_id');
         $title = $request->input('title');
         $create_time = $request->input('create_time');
@@ -50,7 +51,7 @@ class ArticleController extends Controller
         $comment_num = $request->input('comment_num');
         $is_fine = $request->input('is_fine');
         //$page = $request->input('page');
-        $where = '';
+        $where = [];
         $order = '';
         if($nav_id){
             $where['a.nav_id'] = $nav_id;

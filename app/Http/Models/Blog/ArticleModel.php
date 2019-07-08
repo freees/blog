@@ -35,10 +35,10 @@ class ArticleModel extends Model
     public function articleNum(){
         $list = $this->from('article as a')
                     ->join('user as u','a.user_id','=','u.user_id')
-                    //->select(DB::raw('count(*) as num,nick_name,face_img,blog_u.user_no'))
-                     ->selectRaw('count(*) as num,nick_name,face_img,blog_u.user_no' )
-                   // ->select('nick_name','face_img','u.user_no')
-                    ->groupBy('a.user_id')
+                    ->select(DB::raw('count(*) as num'))
+                  //   ->selectRaw('count(*) as num,nick_name,face_img,blog_u.user_no' )
+                   ->select('nick_name','face_img','u.user_no')
+                    ->groupBy('u.nick_name','u.face_img','u.user_no')
                     ->get();
         return $list;
     }
