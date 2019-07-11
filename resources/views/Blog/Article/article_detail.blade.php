@@ -13,14 +13,15 @@
           </li>
         @endforeach
         <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li>
-
-        <!-- 用户登入后显示 -->
         <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="{{url('my_article')}}">我发表的贴</a></li>
-        <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="{{url('my_article')}}">我收藏的贴</a></li>
+        {{-- <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="{{url('my_article')}}">我收藏的贴</a></li>--}}
+        <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"> <input id="search_content" type="text" style="border: none;height: 20px"></li>
+        <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block">
+          <span class="fly-search" id="search"><i class="layui-icon"></i></span>
+        </li>
       </ul>
 
       <div class="fly-column-right layui-hide-xs">
-        <span class="fly-search"><i class="layui-icon"></i></span>
         <a href="{{route('add_article')}}" class="layui-btn">发表新帖</a>
       </div>
       <div class="layui-hide-sm layui-show-xs-block" style="margin-top: -10px; padding-bottom: 10px; text-align: center;">
@@ -160,14 +161,14 @@
     layui.use("layer",function(){
       //相册层
       $(".d_content img").click(function () {
+        var start = $(".d_content img").index(this);
         var json = {
-          title: "图片信息",
-          id: "merchantManage",
+          start: start,
           data: getPictureURL()
         }
         layer.photos({
           photos: json //格式见API文档手册页
-          ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机
+          ,anim: 4 //0-6的选择，指定弹出图片动画类型，默认随机
         });
       });
     })
@@ -233,6 +234,10 @@
         return false;
       });
 
+      $(document).on('click','#search',function(){
+        var content = $('#search_content').val();
+        window.location.href = "article_list?title="+content;
+      });
 
       $(document).on('click','.reply',function(){
         var reply_nick_name =  $(this).parents('li').find('.nick_name').html();
@@ -293,7 +298,6 @@
         });
       }
     }
-
   </script>
 @endsection
 

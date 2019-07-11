@@ -77,3 +77,19 @@ function makeStr($count=10){
     $from = rand(0, 25);
     return substr(str_shuffle($str),$from,$count);
 }
+
+
+//防SQL注入，防XSS攻击
+function preventAttacks($data){
+    $data['check_code'] = '1';
+    foreach ($data as $k => $v){
+        $data[$k] = addslashes($data[$k]);
+        $data[$k] = htmlentities($data[$k],ENT_QUOTES);//将字符内容转化为html实体
+        $str = '/select|insert|update|CR|document|LF|eval|delete|or|and|script|alert|union|into|load_file|outfile/';
+        if(preg_match($str,$data[$k])) {
+            $data['check_code'] = '2';
+            return $data;
+        }
+    }
+    return $data;
+}

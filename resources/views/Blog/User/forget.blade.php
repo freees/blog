@@ -14,7 +14,7 @@
               <div class="layui-form-item">
                 <label for="L_email" class="layui-form-label">邮箱</label>
                 <div class="layui-input-inline">
-                  <input type="text" id="email" name="email" required lay-verify="required" autocomplete="off" class="layui-input">
+                  <input type="text" id="email" name="email" required lay-verify="email" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-mid" style="padding: 0!important;">
                   <button type="button" class="layui-btn layui-btn-normal" id="getcode" >获取验证码</button>
@@ -78,7 +78,6 @@
             });
           }else if(res.code == '2'){
             layer.msg(res.msg, function () {
-              window.location.reload();
             });
           }
         },'json');

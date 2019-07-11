@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
+  <meta name="keywords" content="博客,论坛,社区,个人博客,技术社区,技术论坛,开源博客,开源社区,开源论坛">
+  <meta name="description" content="博客,论坛,社区,个人博客,技术社区,技术论坛,开源博客,开源社区,开源论坛">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Free社区</title>
   <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon" />

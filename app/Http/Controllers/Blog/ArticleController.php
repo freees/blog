@@ -43,7 +43,13 @@ class ArticleController extends Controller
     }
 
     public function articleList(Request $request){
-        $_SERVER;
+        $data = $request->input();
+        $data = preventAttacks($data);
+        if($data['check_code'] == '2'){
+            return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+        }else{
+            unset($data['check_code']);
+        }
         $nav_id = $request->input('nav_id');
         $title = $request->input('title');
         $create_time = $request->input('create_time');
@@ -57,7 +63,7 @@ class ArticleController extends Controller
             $where['a.nav_id'] = $nav_id;
         }
         if($title){
-            $where['title'] = $title;
+            $where[0] = ['title','like','%'.$title.'%'];
         }
         if($create_time){
             $order = 'create_time';
@@ -82,6 +88,13 @@ class ArticleController extends Controller
     }
 
     public function articleDetail(Request $request){
+        $data = $request->input();
+        $data = preventAttacks($data);
+        if($data['check_code'] == '2'){
+            return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+        }else{
+            unset($data['check_code']);
+        }
         $article_id = $request->input('article_id');
         $nav_id = $request->input('nav_id');
         $NavigationModel = new NavigationModel();

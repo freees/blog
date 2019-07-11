@@ -21,6 +21,12 @@ class UserController extends Controller
     public function register(Request $request){
         if(request()->ajax()){
             $data = $request->input();
+            $data = preventAttacks($data);
+            if($data['check_code'] == '2'){
+                return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+            }else{
+                unset($data['check_code']);
+            }
             //验证验证码
             if (! captcha_check($data['captcha'])) {
                 return json_encode(['msg'=>'验证码错误','code'=>'2']);
@@ -29,6 +35,10 @@ class UserController extends Controller
             $arr = $this->userModel->select('*')->where('email',$data['email'])->first();
             if($arr){
                 return json_encode(['msg'=>'邮箱已被注册','code'=>'2']);
+            }
+            $arr = $this->userModel->select('*')->where('nick_name',$data['nick_name'])->first();
+            if($arr){
+                return json_encode(['msg'=>'昵称已存在','code'=>'2']);
             }
             //删除多余数据，直接存入数据库
             unset($data['password2']);
@@ -63,6 +73,14 @@ class UserController extends Controller
     public function login(Request $request){
         if(request()->ajax()){
             $data = $request->input();
+
+            $data = preventAttacks($data);
+            if($data['check_code'] == '2'){
+                return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+            }else{
+                unset($data['check_code']);
+            }
+
             if (!captcha_check($data['captcha'])) {
                 return json_encode(['msg'=>'验证码错误','code'=>'2']);
             }
@@ -100,6 +118,12 @@ class UserController extends Controller
     function forget(Request $request){
         if(request()->ajax()){
             $data = $request->input();
+            $data = preventAttacks($data);
+            if($data['check_code'] == '2'){
+                return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+            }else{
+                unset($data['check_code']);
+            }
             if($data['code'] != session('code')){
                 return json_encode(['msg'=>'验证码错误','code'=>'2']);
             }
@@ -118,6 +142,13 @@ class UserController extends Controller
     }
 
     public function checkEmail(Request $request){
+        $data = $request->input();
+        $data = preventAttacks($data);
+        if($data['check_code'] == '2'){
+            return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+        }else{
+            unset($data['check_code']);
+        }
         $user_no = $request->input('user_no');
         if($user_no){
             $result = $this->userModel->where('user_no', $user_no)->update(['email_is_check' => 1]);
@@ -157,6 +188,12 @@ class UserController extends Controller
         $user = getUserInfo(session('user_id'));
         if(request()->ajax()){
             $data = $request->input();
+            $data = preventAttacks($data);
+            if($data['check_code'] == '2'){
+                return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+            }else{
+                unset($data['check_code']);
+            }
             if(array_key_exists('email',$data)){
                 if($user['email'] != $data['email']){
                     $old = $this->userModel->where('email',$data['email'])->first();
@@ -214,6 +251,13 @@ class UserController extends Controller
         return view('Blog.User.my_article')->with('article_list',$article_list)->with('collect',$collect);
     }
     public function userHome(Request $request){
+        $data = $request->input();
+        $data = preventAttacks($data);
+        if($data['check_code'] == '2'){
+            return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+        }else{
+            unset($data['check_code']);
+        }
         $user_no = $request->input('user_no');
         $userInfo = $this->userModel->where('user_no', $user_no)->first();
         $ArticleModel = new ArticleModel();

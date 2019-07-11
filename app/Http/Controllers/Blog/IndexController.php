@@ -12,6 +12,14 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index(Request $request){
+        $data = $request->input();
+        $data = preventAttacks($data);
+        if($data['check_code'] == '2'){
+            return json_encode(['msg'=>'参数非法，请勿使用特殊字段','code'=>'2']);
+        }else{
+            unset($data['check_code']);
+        }
+
         $create_time = $request->input('create_time');
         $page_views = $request->input('page_views');
         $comment_num = $request->input('comment_num');

@@ -7,13 +7,17 @@
         @foreach ($nav_list_2 as $value)
         <li><a href="{{route('article_list',['nav_id'=>$value->nav_id,'create_time'=>'desc'])}}">{{ $value->name }}<span class="{{$value->class_name}}"></span></a></li>
         @endforeach
-      <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li>
+        <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><span class="fly-mid"></span></li>
         <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="{{url('my_article')}}">我发表的贴</a></li>
-        <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="{{url('my_article')}}">我收藏的贴</a></li>
+       {{-- <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"><a href="{{url('my_article')}}">我收藏的贴</a></li>--}}
+        <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block"> <input id="search_content" type="text" style="border: none;height: 20px"></li>
+        <li class="layui-hide-xs layui-hide-sm layui-show-md-inline-block">
+          <span class="fly-search" id="search"><i class="layui-icon"></i></span>
+        </li>
     </ul>
 
     <div class="fly-column-right layui-hide-xs">
-      <span class="fly-search"><i class="layui-icon"></i></span>
+
       <a href="{{route('add_article')}}" class="layui-btn">发表新帖</a>
     </div>
     <div class="layui-hide-sm layui-show-xs-block" style="margin-top: -10px; padding-bottom: 10px; text-align: center;">
@@ -121,4 +125,13 @@
     @include('Blog.Common.right_module')
   </div>
 </div>
+<script>
+  layui.use(['layer'], function(){
+    var layer = layui.layer;
+    $(document).on('click','#search',function(){
+      var content = $('#search_content').val();
+      window.location.href = "article_list?title="+content;
+    });
+  });
+</script>
 @endsection
